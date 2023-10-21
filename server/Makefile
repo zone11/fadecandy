@@ -41,9 +41,9 @@ VERSION := $(shell git describe --match "fcserver-*")
 CXXFLAGS += -DFCSERVER_VERSION=$(VERSION)
 
 ifeq ($(UNAME), Darwin)
-	# Mac OS X (32-bit build)
-	LDFLAGS += -m32
-	CPPFLAGS += -m32 -DHAVE_POLL_H
+	# Mac OS X (64-bit build)
+	LDFLAGS += -m64
+	CPPFLAGS += -m64 -DHAVE_POLL_H
 
 	ifeq ("$(shell which llvm-gcc)", "")
 		# We want to support all the way back to OS 10.6 (Snow Leopard), which used gcc
@@ -195,7 +195,7 @@ $(TARGET): $(SUBMODULES_TARGETS) $(OBJS)
 -include $(OBJS:.o=.d)
 
 src/httpdocs.cpp: http/* http/js/* http/css/*
-	(cd http; python manifest.py) > $@
+	(cd http; python3 manifest.py) > $@
 
 clean:
 	rm -f $(CLEAN_FILES) $(TARGET)

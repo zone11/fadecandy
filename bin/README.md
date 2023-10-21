@@ -7,13 +7,8 @@ Fadecandy Server
 ----------------
 
 * `fcserver-osx`
-  * Ready-to-run fcserver for Mac OS 10.6 and later
-* `fcserver.exe`
-  * Ready-to-run fcserver for Windows 7 and later
-* `fcserver-rpi`
-  * Ready-to-run fcserver for Raspberry Pi
-  * May also work on other ARM Linux distributions
-  * Requires root privileges and/or special usbfs configuration
+  * Ready-to-run fcserver for Mac OS 64-bit ARM
+
 
 Firmware Images
 ---------------

@@ -5,13 +5,9 @@
 ## Purpose of Fadecandy
 Fadecandy is a project that makes LED art easier, tastier, and more creative. We're all about creating tools that remove the technical drudgery from making LED art, freeing you to do more interesting, nuanced, and creative things. We think LEDs are more than just trendy display devices, we think of them as programmable light for interactive art.
 
-* [Video Introduction to Fadecandy](https://vimeo.com/79935649)
 * [Introduction by Nick Poole from Spark Fun Electronics](https://www.youtube.com/watch?v=-4AUBjV7Y-w)
 * [Tutorial: LED Art with Fadecandy](https://learn.adafruit.com/led-art-with-fadecandy)
 * [Tutorial: 1,500 NeoPixel LED Curtain with Raspberry Pi and Fadecandy](https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy/)
-* [Presentation slides: Easier and Tastier LED Art with Fadecandy](http://www.misc.name/easier-and-tastier-led-art-with-fadecandy/)
-* [LED Interaction Research with Fadecandy at Stimulant labs](http://stimulant.com/led-interaction-research/)
-
 
 Simple Example
 --------------
@@ -160,15 +156,14 @@ Where to?
 
 * [Video introduction by Nick Poole from Spark Fun Electronics](https://www.youtube.com/watch?v=-4AUBjV7Y-w)
 * Tutorial: ["LED Art with Fadecandy"](https://learn.adafruit.com/led-art-with-fadecandy)
-* Sample projects are in [examples](https://github.com/scanlime/fadecandy/tree/master/examples)
-* Pre-compiled binaries are in [bin](https://github.com/scanlime/fadecandy/tree/master/bin)
-* More documentation is included in [doc](https://github.com/scanlime/fadecandy/tree/master/doc)
-  * [Open Pixel Control Protocol](https://github.com/scanlime/fadecandy/blob/master/doc/fc_protocol_opc.md)
-  * [WebSocket Protocol](https://github.com/scanlime/fadecandy/blob/master/doc/fc_protocol_websocket.md)
-  * [USB Protocol](https://github.com/scanlime/fadecandy/blob/master/doc/fc_protocol_usb.md)
-  * [Processing OPC Client](https://github.com/scanlime/fadecandy/blob/master/doc/processing_opc_client.md)
-  * [Server Configuration](https://github.com/scanlime/fadecandy/blob/master/doc/fc_server_config.md)
-  * ...or if you still have questions, ask the [discussion group](https://groups.google.com/forum/#!forum/fadecandy)
+* Sample projects are in [examples](https://github.com/zone11/fadecandy/tree/master/examples)
+* Pre-compiled binaries are in [bin](https://github.com/zone11/fadecandy/tree/master/bin)
+* More documentation is included in [doc](https://github.com/zone11/fadecandy/tree/master/doc)
+  * [Open Pixel Control Protocol](https://github.com/zone11/fadecandy/blob/master/doc/fc_protocol_opc.md)
+  * [WebSocket Protocol](https://github.com/scanlime/zone11/blob/master/doc/fc_protocol_websocket.md)
+  * [USB Protocol](https://github.com/scanlime/zone11/blob/master/doc/fc_protocol_usb.md)
+  * [Processing OPC Client](https://github.com/zone11/fadecandy/blob/master/doc/processing_opc_client.md)
+  * [Server Configuration](https://github.com/zone11/fadecandy/blob/master/doc/fc_server_config.md)
 
 
 Frequently Asked Questions

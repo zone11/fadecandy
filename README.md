@@ -1,4 +1,5 @@
-![Fadecandy Title](https://raw.github.com/scanlime/fadecandy/master/doc/images/fc-title.png)
+Backup of the final state of the official repository before deletition
+--------------
 
 Fadecandy is a project that makes LED art easier, tastier, and more creative. We're all about creating tools that remove the technical drudgery from making LED art, freeing you to do more interesting, nuanced, and creative things. We think LEDs are more than just trendy display devices, we think of them as programmable light for interactive art.
 
@@ -9,19 +10,11 @@ Fadecandy is a project that makes LED art easier, tastier, and more creative. We
 * [Presentation slides: Easier and Tastier LED Art with Fadecandy](http://www.misc.name/easier-and-tastier-led-art-with-fadecandy/)
 * [LED Interaction Research with Fadecandy at Stimulant labs](http://stimulant.com/led-interaction-research/)
 
-Buy a Fadecandy Controller board:
-
-* [Adafruit](http://www.adafruit.com/products/1689)
-* [RGB-123](http://rgb-123.com/product/fadecandy/)
-
-[![Join the chat at https://gitter.im/scanlime/fadecandy](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/scanlime/fadecandy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Simple Example
 --------------
 
 Here's a simple project, a single LED strip controlled by a Processing sketch running on your laptop:
-
-![Fadecandy system diagram 1](https://raw.github.com/scanlime/fadecandy/master/doc/images/system-diagram-1.png)
 
 ```
 // Simple Processing sketch for controlling a 64-LED strip.
@@ -54,12 +47,6 @@ void draw()
 }
 ```
 
-A More Complex Example
-----------------------
-
-Fadecandy is also useful for larger projects with many thousands of LEDs, and it's useful for art that runs on embedded computers like the Raspberry Pi:
-
-![Fadecandy system diagram 2](https://raw.github.com/scanlime/fadecandy/master/doc/images/system-diagram-2.png)
 
 Project Scope
 -------------
@@ -166,8 +153,6 @@ Browser UI
 
 When you run `fcserver`, it also gives you a simple browser-based UI for identifying the attached Fadecandy Controllers and quickly testing your lights. By default, this UI runs on [http://localhost:7890](http://localhost:7890).
 
-![Browser UI Screenshot](https://raw.github.com/scanlime/fadecandy/master/doc/images/web-ui-screenshot.png)
-
 Where to?
 ---------
 
@@ -182,9 +167,7 @@ Where to?
   * [Processing OPC Client](https://github.com/scanlime/fadecandy/blob/master/doc/processing_opc_client.md)
   * [Server Configuration](https://github.com/scanlime/fadecandy/blob/master/doc/fc_server_config.md)
   * ...or if you still have questions, ask the [discussion group](https://groups.google.com/forum/#!forum/fadecandy)
-* Buy a Fadecandy Controller board
-  * [Adafruit](http://www.adafruit.com/products/1689)
-  * [RGB-123](http://rgb-123.com/product/fadecandy/)
+
 
 Frequently Asked Questions
 --------------------------
@@ -229,23 +212,3 @@ USB Bus bandwidth will start to be a problem around a dozen Fadecandy boards per
 The [Open Pixel Control](http://openpixelcontrol.org/) protocol used by Fadecandy has a packet size limit of 64 kilobytes, or 21845 LEDs. Any more than that will require workarounds, such as extending the OPC protocol or using multiple OPC channels.
 
 And then there's CPU power... these limits will depend on the language and framework your code uses, and what kind of computer you're running from. A large installation with 10,000 LEDs will probably need to run off of a laptop or Mac Mini unless your code is quite efficient. Smaller installations with up to 1000 LEDs or so could run off of something as small as a Raspberry Pi. But these are very broad generalizations, and this all depends on how much processing you need to perform per-LED. Keep in mind the scalability levels of your particular framework when you plan to build a large installation.
-
-### The Raspberry Pi is kind of slow. What other small embedded Linux computers are available?
-
-There are a lot of options to choose from, but my current favorite is the [ODROID-U3](http://www.hardkernel.com/main/products/prdt_info.php?g_code=G138745696275). It's about the same size as a Raspberry Pi, with a 1.7 GHz quad-core ARM. There's an optional fan add-on, but I haven't found it to be necessary yet.
-
-### I'm using Windows 7, and the driver for Fadecandy doesn't load. What can I do?
-
-Make sure you have all available Windows updates installed. Fadecandy uses a Windows feature ([WCID](https://github.com/pbatard/libwdi/wiki/WCID-Devices)) that wasn't present in the original retail version of Windows 7, but it was added in a subsequent update.
-
-For reference, this is a 
-[series of screenshots](http://imgur.com/a/0MAFR) showing a Fadecandy controller attached to a freshly installed Windows 7 Home Professional 32-bit virtual machine. At first it fails (no driver for "Fadecandy") but after updating Windows, it finds the correct device (WinUSB) and fcserver connects to it.
-
-If that doesn't fix it, you may have a version of Windows with an inexplicably broken `WinUSB` driver. The French version of Windows 7 SP1 seems to be afflicted by this bug, and possibly others. As a workaround, you can use the [Zadig](http://zadig.akeo.ie/) utility to manually install an alternative driver. Use the arrows to change the driver on the right side of the arrow from `WinUSB` to `libusbK`, then click "Install Driver". You can see a [series of screenshots](http://imgur.com/a/25V81) illustrating this.
-
-If you're still having trouble, please ask for help on the [discussion group](https://groups.google.com/forum/#!forum/fadecandy) or [bug tracker](https://github.com/scanlime/fadecandy/issues) and we can get to the bottom of this problem together. Thanks for your patience!
-
-Contact
--------
-
-Please direct questions to the [Discussion group](https://groups.google.com/forum/#!forum/fadecandy), it's full of smart and creative people who can help!

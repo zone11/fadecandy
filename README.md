@@ -1,4 +1,4 @@
-Backup of the final state of the official repository before deletition
+Backup of the final state from the official repository (before deletition)
 --------------
 
 Fadecandy is a project that makes LED art easier, tastier, and more creative. We're all about creating tools that remove the technical drudgery from making LED art, freeing you to do more interesting, nuanced, and creative things. We think LEDs are more than just trendy display devices, we think of them as programmable light for interactive art.

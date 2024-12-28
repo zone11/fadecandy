@@ -1,4 +1,4 @@
-# Backup of the final state from the official repository (before deletition)
+# Backup of the final state from the official repository
 * Missing images, some dead links and unnecessary stuff removed from this README
 * Binary for OSX on ARM added and ready to use
 
